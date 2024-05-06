@@ -1,13 +1,63 @@
 <!DOCTYPE html>
 <html lang="da">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/main.css" />
     <script src="assets/js/javascript.js" defer></script>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <section id="formContainer">
+      <form>
+        <fieldset>
+          <label for="navn">Navn</label>
+          <input
+            type="text"
+            id="navn"
+            name="txt.navn"
+            placeholder="Dit navn"
+            required
+          />
+
+          <label for="efternavn">Efternavn</label>
+          <input
+            type="text"
+            id="efternavn"
+            name="txt.efternavn"
+            placeholder="Dit Efternavn"
+            required
+          />
+
+          <label for="email">Email</label>
+          <input 
+            type="email" 
+            id="email"
+            name="txt.email"
+            placeholder="@Email" 
+            required 
+          />
+
+          <label for="alder">Alder</label>
+          <input 
+            type="number" 
+            name="txt.alder"
+            id="alder" 
+            placeholder="Din Alder" 
+            required 
+          />
+
+          <label>Interesser</label>
+          <select>
+            <option value="svømning">svømning</option>
+            <option value="løb">løb</option>
+            <option value="cykling">cykling</option>
+          </select>
+          <button id="submitButton" type="submit">Tilmeld</button>
+        </fieldset>
+
+        <section id="respons"></section>
+      </form>
+    </section>
+  </body>
 </html>
